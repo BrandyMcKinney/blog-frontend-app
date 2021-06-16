@@ -5,7 +5,8 @@ import axios from "axios";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "/";
+axios.defaults.baseURL =
+  process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://arcane-coast-20384.herokuapp.com/posts/";
 
 var jwt = localStorage.getItem("jwt");
 if (jwt) {
